@@ -177,9 +177,38 @@ main {
 .main-content {
   height: 100%;
   width: calc(100% - 200px);
-  background-color: orange;
+  background-color: #141922;
   overflow-y: scroll;
 }
+
+/* upgrade area */
+.main-content-top {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100px;
+  background-color: #080B12;
+}
+
+.button-upgrade {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 50px;
+  border: 1px solid white;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.button-upgrade:hover {
+  font-size: 20px;
+}
+/*/upgrade area  */
+
+
+
+
 
 footer {
   display: flex;
@@ -235,6 +264,14 @@ footer {
     background-color: gray;
   }
 
+  .main-content {
+    height: 100%;
+    width: calc(100% - 50px);
+    background-color: #141922;
+    overflow-y: scroll;
+  }
+
+
   .display_none_xs {
     display:none;
   }
@@ -244,9 +281,9 @@ footer {
   }
   /* aside area */
   .fab.fa-spotify {
-    font-size: 45px;
+    font-size: 35px;
     color: white;
-    padding: 2px;
+    padding: 5px;
   }
 
   .far.fa-user-circle {
