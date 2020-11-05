@@ -138,7 +138,7 @@ main {
 .nav-bottom {
   width: 100%;
   height: 90px;
-  padding: 30px 0;
+  padding: 30px 0 0 10px;
   line-height: 30px;
 }
 
@@ -205,6 +205,39 @@ main {
   font-size: 20px;
 }
 /*/upgrade area  */
+
+.music-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top:10px;
+}
+.music-nav li {
+  line-height: 10px;
+  color: #7D7F84;
+  padding: 10px 10px;
+  list-style: none;
+}
+
+.music-nav li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#evidenza {
+  position: relative;
+}
+
+#evidenza:after {
+  content: "";
+ background: green;
+ position: absolute;
+ bottom: -5px;
+ left: 40px;
+ height: 4px;
+ width: 40px;
+}
 
 
 
