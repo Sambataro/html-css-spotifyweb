@@ -23,6 +23,7 @@ main {
   background-color: gray;
 }
 
+/* aside area */
 
 .main-nav {
   display: flex;
@@ -36,6 +37,15 @@ main {
   color: #656565;
 }
 
+.nav-top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 90px);
+  overflow: hidden;
+}
+
+/* logo e menu area */
 #logo-white {
   width: 80%;
   padding-left: 10px;
@@ -70,15 +80,8 @@ main {
   font-size: 17px;
   color: white;
 }
-
-.nav-top {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: calc(100% - 90px);
-  overflow: hidden;
-}
-
+/* /logo e menu area */
+/* playlist area */
 .playlist {
   height: 80%;
   padding: 20px 0 0 10px;
@@ -129,7 +132,9 @@ main {
   height: 62%;
   overflow-y: auto;
 }
+/*/playlist area */
 
+/* installa app e profilo area */
 .nav-bottom {
   width: 100%;
   height: 90px;
@@ -162,6 +167,8 @@ main {
   color: white;
   font-weight: bolder;
 }
+/*/installa app e profilo area */
+/* /aside area */
 
 
 
@@ -220,32 +227,7 @@ footer {
 
 @media screen and (max-width:768px) {
 
-  .display_none_xs {
-    display:none;
-  }
 
-  .display_only_xs{
-    display:flex;
-  }
-
-  .fab.fa-spotify {
-    font-size: 45px;
-    color: white;
-    padding: 2px;
-  }
-
-  .far.fa-user-circle {
-    font-size: 40px;
-    color: white;
-    padding-bottom: 10px;
-  }
-
-  .fas.fa-home , .fas.fa-search , .fas.fa-list {
-    padding: 5px;
-    font-size: 30px;
-  }
-
-  ]
   main {
     display: flex;
     height: calc(100% - 90px);
@@ -253,7 +235,30 @@ footer {
     background-color: gray;
   }
 
+  .display_none_xs {
+    display:none;
+  }
 
+  .display_only_xs{
+    display:flex;
+  }
+  /* aside area */
+  .fab.fa-spotify {
+    font-size: 45px;
+    color: white;
+    padding: 2px;
+  }
+
+  .far.fa-user-circle {
+    font-size: 35px;
+    color: white;
+    padding: 5px;
+  }
+
+  .fas.fa-home , .fas.fa-search , .fas.fa-list{
+    padding: 5px;
+    font-size: 30px;
+  }
 
   .main_nav_xs {
     display: flex;
@@ -262,6 +267,21 @@ footer {
     padding: 0;
 
   }
+
+  .nav-bottom {
+    width: 100%;
+    height: 90px;
+    padding: 0;
+    line-height: 0;
+  }
+
+  .far.fa-arrow-alt-circle-down{
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  /*/aside area */
+
 
 
 
