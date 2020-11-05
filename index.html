@@ -2,7 +2,7 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>spotify my</title>
+    <title>spotify +</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
@@ -13,11 +13,20 @@
     <div class="wrapper">
       <!-- main -->
       <main>
-      <aside class="main-nav">
+      <aside class="main-nav main_nav_xs">
         <!-- logo e menu  -->
         <div class="nav-top">
           <section class="logo">
-            <img id="logo-white" src="img/logo-white.png" alt="">
+            <img id="logo-white" class="display_none_xs" src="img/logo-white.png" alt="">
+            <i class="display_only_xs fab fa-spotify"></i>
+            <i class="display_only_xs fas fa-home"></i>
+            <i class="display_only_xs fas fa-search"></i>
+            <i class="display_only_xs fas fa-list"></i>
+          </section>
+          <!-- visibile solo xs -->
+
+          <!--/visibile solo xs -->
+          <section class="menu display_none_xs">
             <ul>
               <li>
                 <i class="fas fa-home"></i>
@@ -34,13 +43,11 @@
             </ul>
           </section>
           <!--/logo e menu  -->
-          <section class="playlist">
+          <section class="playlist display_none_xs">
             <h2>PLAYLIST</h2>
             <div class="crea-playlist">
-              <div id="square-plus">
-                <i class="fas fa-plus"></i>
-              </div>
-              <h3>Crea Playlist</h3>
+              <a href="#" class="button">Crea Playlist</a>
+
             </div>
             <ul id="playlist-scroll">
               <li>Nome Playlist</li>
@@ -55,12 +62,13 @@
         </div>
 
         <div class="nav-bottom">
-          <a href="#">Installa App</a>
-          <hr>
-          <div>
-            John Doe
-          </div>
+          <a href="#"> <i class="far fa-arrow-alt-circle-down"></i> <span class="display_none_xs">Installa App</span></a>
+          <hr class="display_none_xs">
+          <i class="far fa-user-circle"></i>
+          <span class="display_none_xs">John Doe</span>
         </div>
+
+
 
       </aside>
       </main>
