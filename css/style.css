@@ -211,14 +211,15 @@ main {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top:10px;
+  padding-top: 10px;
 }
 .music-nav li {
   line-height: 10px;
   color: #7D7F84;
-  padding: 10px 10px;
+  padding: 20px 10px;
   list-style: none;
 }
+
 
 .music-nav li:hover {
   color: white;
@@ -233,7 +234,7 @@ main {
   content: "";
  background: green;
  position: absolute;
- bottom: -5px;
+ bottom: 10px;
  left: 40px;
  height: 4px;
  width: 40px;
