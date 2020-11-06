@@ -101,7 +101,7 @@ main {
 
 .crea-playlist:hover {
   color: white;
-  cursor: po
+  cursor: pointer;
 }
 
 .button {
@@ -169,11 +169,6 @@ main {
 }
 /*/installa app e profilo area */
 /* /aside area */
-
-
-
-
-
 .main-content {
   height: 100%;
   width: calc(100% - 200px);
@@ -205,8 +200,6 @@ main {
   font-size: 20px;
 }
 /*/upgrade area  */
-
-
 /* music nav area */
 .music-nav ul {
   display: flex;
@@ -221,7 +214,6 @@ main {
   padding: 20px 10px;
   list-style: none;
 }
-
 
 .music-nav li:hover {
   color: white;
@@ -241,10 +233,9 @@ main {
  height: 4px;
  width: 40px;
 }
-
 /*/music nav area */
 
-/* recent area */
+/* riprodotti recentemente */
 .recently-played {
   margin: 20px 0 20px 20px;
   color: white;
@@ -302,8 +293,8 @@ main {
   background-color: black;
   opacity: 0.7;
 }
-/*/recent area */
-/* playlist bespoke area */
+/*/riprodotti recentemente */
+/* playlist su misura */
 .playlist-bespoke {
   margin: 100px 0 20px 20px;
   color: white;
@@ -313,9 +304,9 @@ main {
   color: #7D7F84;
   padding: 10px 0;
 }
-/* playlist bespoke area */
+/* playlist su misura */
 
-
+/* artisti popolari */
 .popular-artist {
   margin: 100px 0 20px 20px;
   color: white;
@@ -333,38 +324,38 @@ main {
 .circle {
   border-radius: 50%
 }
-
-
-
-
+/*/artisti popolari */
 
 footer {
   display: flex;
+  justify-content: space-between;
   height: 90px;
   background-color: #282828;
   color: white;
   font-size: 25px;
 }
 
+
+
 .play.far.fa-play-circle {
   font-size: 25px;
   padding: 0 20px;
 }
 
-
+/* controller riproduzione brano */
 .controller {
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 70%;
+ width: 40%;
  height: 100%;
  font-size: 15px;
 }
 
 .controller-audio , .song-info {
   display: flex;
-  width: 15%;
+  width: 250px;
   height: 100%;
 }
 
@@ -375,6 +366,13 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+
+.player-top .play.far.fa-play-circle:hover{
+  font-size: 35px;
+  padding: 0 20px;
+  cursor: pointer;
 }
 
  .player-bottom {
@@ -400,6 +398,12 @@ footer {
   border-radius: 10px;
 }
 
+.white:hover {
+  background-color: #ADFF30;
+  cursor: pointer;
+
+}
+
 .grey {
   height: 4px;
   width: 80%;
@@ -410,14 +414,14 @@ footer {
 .start-timer , .end-timer {
   margin: 10px;
 }
-
+/* /controller riproduzione brano */
+/* informazioni ripoduzione brano */
 .song-info {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  font-size: 15px;
-  min-width: 141px;
+  font-size: 14px;
 }
 
 .info-item {
@@ -431,12 +435,27 @@ footer {
   width: 80%;
 }
 
+.info-item i , .info-item p {
+  color: #7D7F84;
+}
+
+.info-item p:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.info-item i:hover {
+  color: white;
+  cursor: pointer;
+}
+/* /informazioni ripoduzione brano */
+/* cotroller regolazione volume */
 .controller-audio {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  min-width: 141px;
   font-size: 15px;
 }
 
@@ -460,6 +479,12 @@ footer {
   border-radius: 5px;
 }
 
+.white-bar:hover {
+  background-color: #ADFF30;
+  cursor: pointer;
+
+}
+
 .grey-bar {
   width: 80%;
   height: 4px;
@@ -471,7 +496,7 @@ footer {
   padding:5px;
 }
 
-
+/* /cotroller regolazione volume */
 
 @media screen and (max-width: 1199px) {
 
@@ -496,7 +521,6 @@ footer {
     display: flex;
     height: calc(100% - 90px);
     overflow-y: hidden;
-    background-color: gray;
   }
 
   .main-content {
@@ -555,6 +579,44 @@ footer {
 
   /*/aside area */
 
+  .controller-audio , .song-info {
+    display: flex;
+    width: 96px;
+    height: 100%;
+    flex-shrink: 0;
+  }
+
+  .controller {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   height: 100%;
+   font-size: 15px;
+  }
+
+  .start-timer , .end-timer {
+    margin: 2px;
+    font-size: 12px;
+  }
+
+  .player-top i {
+    margin: 0 2px;
+  }
+
+  .play.far.fa-play-circle {
+    font-size: 25px;
+    padding: 0 5px;
+  }
+
+  .info-item {
+    flex-wrap: wrap;
+  }
+
+  .song-info p , .song-info h5 {
+    font-size: 5px;
+  }
 
 
 }
