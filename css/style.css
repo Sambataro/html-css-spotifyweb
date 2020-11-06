@@ -335,7 +335,7 @@ main {
 
 footer {
   display: flex;
-  height: 100px;
+  height: 90px;
   background-color: #282828;
   color: white;
   font-size: 25px;
@@ -358,15 +358,14 @@ footer {
 }
 
 .controller-audio , .song-info {
-  width: 290px;
+  display: flex;
+  width: 350px;
   height: 100%;
-  background-color: green;
-
 }
 
 .player-top , .player-bottom {
   height: 50%;
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -407,9 +406,71 @@ footer {
   margin: 10px;
 }
 
+.song-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  min-width: 141px;
+}
+
+.info-item {
+  width: calc(100% / 4);
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.info-item img {
+  width: 80%;
+}
+
+.controller-audio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 141px;
+  font-size: 15px;
+}
+
+.audio-item {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.audio-bar {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.white-bar {
+  width: 20%;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.grey-bar {
+  width: 80%;
+  height: 4px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.controller-audio i {
+  padding:5px;
+}
 
 
-@media screen and (max-width:768px) {
+
+
+
+@media screen and (max-width:767px) {
 
 
   main {
