@@ -64,6 +64,7 @@ main {
 
 .menu li:first-child {
   color: white;
+  padding: 0 8px;
   border-left: 4px solid #ADFF30;
 }
 
@@ -579,12 +580,18 @@ footer {
 
   /*/aside area */
 
-  .controller-audio , .song-info {
+  .song-info {
     display: flex;
     width: 96px;
     height: 100%;
     flex-shrink: 0;
   }
+
+  .controller-audio {
+    width: 200px;
+  }
+
+
 
   .controller {
    display: flex;
