@@ -371,8 +371,7 @@ footer {
 
 
 .player-top .play.far.fa-play-circle:hover{
-  font-size: 35px;
-  padding: 0 20px;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
