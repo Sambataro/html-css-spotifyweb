@@ -385,11 +385,11 @@ footer {
 }
 
 
-.player-bar {
+.player-bar , .music-bar {
   width: 50%;
+  background-color: grey;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 .white {
@@ -397,19 +397,24 @@ footer {
   width: 20%;
   background-color: white;
   border-radius: 10px;
+  position: relative;
 }
 
 .white:hover {
   background-color: #ADFF30;
+  display: block;
   cursor: pointer;
 
 }
 
-.grey {
-  height: 4px;
-  width: 80%;
-  background-color: grey;
-  border-radius: 10px;
+.pointer {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50px;
 }
 
 .start-timer , .end-timer {
@@ -623,6 +628,28 @@ footer {
 
   .song-info p , .song-info h5 {
     font-size: 5px;
+  }
+
+  .audio-item {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .music-bar {
+    width: 30%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .controller-audio i {
+    font-size: 5px;
+  }
+
+  .music-bar .white {
+    width: 50%;
   }
 
 
